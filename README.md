@@ -7,7 +7,9 @@ LINE／Discord 訊息同步機器人。一個機器人只能服務一組 LINE �
 ### 一鍵部署
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-總共有 6 個環境變數要設定： 
+若同步失敗請fork此repo並連結Heroku到你的Github帳號來實現同步。使用git下載及上傳亦可。
+
+總共有 6 個環境變數（Config Vars）要設定： 
 ```
 LINEBOT_SECRET
 LINEBOT_ACCESS_TOKEN
@@ -19,7 +21,7 @@ MESSAGE_CHANNEL_ID(可選)
 
 ### LINE bot
 
-建立 Messaging API，設定環境變數 `LINEBOT_SECRET` 及 `LINEBOT_ACCESS_TOKEN`。
+至[Line Developers](https://developers.line.biz/console/) 建立 Messaging API，設定環境變數 `LINEBOT_SECRET` 及 `LINEBOT_ACCESS_TOKEN`。
 
 ### LINE Notify
 
@@ -35,7 +37,7 @@ Discord 伺服器 => `伺服器設定` => `整合` => `建立 Webhook` => `複�
 
 ### Discord channel
 
-Discord 伺服器 => 伺服器頻道 => 右鍵頻道 => `複製ID`(需開啟開發者模式) => 設定環境變數 `MESSAGE_CHANNEL_ID`
+Discord 伺服器 => 伺服器頻道 => 右鍵頻道 => `複製ID`(需至設定 => 進階 => 開啟開發者模式) => 設定環境變數 `MESSAGE_CHANNEL_ID`
 
 ## Author
 
@@ -45,3 +47,4 @@ Discord 伺服器 => 伺服器頻道 => 右鍵頻道 => `複製ID`(需開啟開�
 
 - MirrorShih
 - BWsix(VFLC)
+- Edit Mr.
